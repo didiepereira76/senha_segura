@@ -24,12 +24,17 @@ body {
   background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   color: var(--text-primary);
   position: relative;
   overflow: hidden;
+}
+
+main.password-container {
+  margin-bottom: 24px;
 }
 
 /* Grid de fundo */
