@@ -408,6 +408,57 @@ main.password-container {
   }
 }
 
+.project-footer {
+  width: min(100%, 540px);
+  margin: 24px auto 0;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(14px);
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.footer-content strong {
+  color: var(--text-primary);
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 13px;
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+  background: rgba(37, 99, 235, 0.16);
+  border-color: rgba(37, 99, 235, 0.28);
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
   main.password-container {
